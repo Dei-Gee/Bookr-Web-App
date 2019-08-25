@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, InputGroup, Button, Col } from 'react-bootstrap';
 import { faUser, faKey } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './styles/login.css';
+import '../styles/forms.css';
 import { Redirect } from 'react-router-dom';
 
 class Login extends Component {
@@ -30,14 +30,14 @@ class Login extends Component {
             _password: this.state.password 
         };
         console.log(user);
-        this.props.loginUser(user, this.props.history);
+        // this.props.loginUser(user, this.props.history);
         console.log(localStorage)
-        if(localStorage.getItem('user'))
-        {
-            this.setState({
-                loggedIn: true
-            });
-        }
+        // if(localStorage.getItem('user'))
+        // {
+        //     this.setState({
+        //         loggedIn: true
+        //     });
+        // }
     }
 
     redirect = () => {
