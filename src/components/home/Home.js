@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './styles/styles.css';
-import classnames from 'classnames';
-import Header from '../partials/Header';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Login from '../login/Login';
 import Register from '../register/Register';
